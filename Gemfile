@@ -9,7 +9,6 @@ group :production, :staging do
 	gem "pg"
 	# Heroku stuff
 	gem 'rails_12factor'
-	gem 'rails_layout'
 end
 
 group :development, :test do
