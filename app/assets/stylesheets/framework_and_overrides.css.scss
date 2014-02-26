@@ -15,27 +15,40 @@ img {
 // create your own classes
 // to make views framework-neutral
 
-.purplebg {
-  background-color: #CC9DD9;
+.clear
+{
+  background-color: rgba(0,0,0,0);
 }
 
-body{background:#CC9DD9;}
+body{background:#EFCDFF;}
 
-.mytabs{
-  background-color: #CC1234;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+/* tab color */
+.purpleTab>li>a
+{
+  background-color: #9F96E8; 
+  color:#fff;
+  border: none;
 }
 
-.behindtabs{
-  background-color: #FF03FC;
-  //@extend .container;
-  //padding-top: 100px;  //makes the tab bg taller
-
+/* active tab color */
+.purpleTab>li.active>a, .purpleTab>li.active>a:hover, .purpleTab>li.active>a:focus
+{
+  color: #333333;
+  background-color: #FFFFFF;
+  border: none;
 }
 
-.contentpage{
-  background-color: #FF5C03;
+/* hover tab color */
+.purpleTab>li>a:hover
+{
+  background-color: #E89FC6;
+  border:none;
+}
+
+.contentpage
+{
+  background-color: #fff;
+  height: 400px;
 }
 
 .column {
@@ -58,10 +71,10 @@ body{background:#CC9DD9;}
 // to make views framework-neutral
 main {
   @extend .container;
-  background-color: #eee;
+  background-color: rgba(0,0,0,0);
   padding-bottom: 80px;
   width: 100%;
-  margin-top: 11px; // accommodate the navbar:  STARTS AS 51 px
+  margin-top: 51px; // accommodate the navbar:  STARTS AS 51 px
   }
 section {  //I don't know where/what this is, I can't find it.
   @extend .row;
