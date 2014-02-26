@@ -14,6 +14,30 @@ img {
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
 // to make views framework-neutral
+
+.testbg {
+  background-color: #CC9DD9;
+}
+
+body{background:#CC9DD9;}
+
+.mytabs{
+  background-color: #CC1234;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.behindtabs{
+  background-color: #FF03FC;
+  //@extend .container;
+  //padding-top: 100px;  //makes the tab bg taller
+
+}
+
+.contentpage{
+  background-color: #FF5C03;
+}
+
 .column {
   @extend .col-md-6;
   @extend .text-center;
@@ -37,9 +61,10 @@ main {
   background-color: #eee;
   padding-bottom: 80px;
   width: 100%;
-  margin-top: 51px; // accommodate the navbar
+  margin-top: 11px; // accommodate the navbar:  STARTS AS 51 px
   }
-section {
+section {  //I don't know where/what this is, I can't find it.
   @extend .row;
   margin-top: 20px;
+  //background-color: #FF5C03;
   }

@@ -5,7 +5,7 @@ gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
 
-group :production, :staging do
+group :production do
 	gem "pg"
 	# Heroku stuff
 	gem 'rails_12factor'
