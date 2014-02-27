@@ -77,10 +77,21 @@ body{background:#EFCDFF;}
 .contentpage
 {
   background-color: #F0F0F0;
-  height: 400px;
+  height: 450px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius:  5px;
   border-top-right-radius:  5px;
+  padding: 10px;
+}
+
+.panelheader1
+{
+  font-size: 32px;
+}
+
+.panelheader2
+{
+  font-size: 24px;
 }
 
 .column {
