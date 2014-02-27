@@ -27,7 +27,6 @@ body{background:#EFCDFF;}
 }
 .autoCompleteBox
 {
-  visibility: visible;
   background-color: #ffffff;
   width: 16.8em;
   margin-left: 0.2em;
@@ -55,7 +54,7 @@ body{background:#EFCDFF;}
 .purpleTab>li>a
 {
   background-color: #9B96E8; 
-  color:#fff;
+  color:#ffffff;
   border: none;
 }
 
@@ -63,7 +62,7 @@ body{background:#EFCDFF;}
 .purpleTab>li.active>a, .purpleTab>li.active>a:hover, .purpleTab>li.active>a:focus
 {
   color: #333333;
-  background-color: #F0F0F0;
+  background-color: #ffffff;
   border: none;
 }
 
@@ -76,7 +75,7 @@ body{background:#EFCDFF;}
 
 .contentpage
 {
-  background-color: #F0F0F0;
+  background-color: #fff;
   height: 450px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius:  5px;

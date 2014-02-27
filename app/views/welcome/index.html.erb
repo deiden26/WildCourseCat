@@ -5,9 +5,12 @@
 		<div class="col-md-4">
 			<h3>Please enter a course</h3>
 			<form>
-				<input class="courseSearch" placeholder="Course title or number"></input>
+				<input class="courseSearch" placeholder="Course title or number"
+				onfocus="$('.autoCompleteBox').show();"
+				onblur="$('.autoCompleteBox').hide();"
+				></input>
 			</form>
-			<div class="autoCompleteBox">
+			<div class="autoCompleteBox" hidden>
 				<p class="autoCompleteEntry">Psych 303-0</p>
 				<p class="autoCompleteEntry">Psych 312-2</p>
 				<p class="autoCompleteEntry">Psych 314-0</p>
