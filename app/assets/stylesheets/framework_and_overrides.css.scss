@@ -15,12 +15,41 @@ img {
 // create your own classes
 // to make views framework-neutral
 
-.clear
-{
-  background-color: rgba(0,0,0,0);
-}
-
 body{background:#EFCDFF;}
+
+.courseSearch
+{
+  @extend .form-control;
+  color:#555555;
+  width: 17.2em;
+  border-radius: 5px;
+  padding-left: 11px;
+}
+.autoCompleteBox
+{
+  visibility: visible;
+  background-color: #ffffff;
+  width: 16.8em;
+  margin-left: 0.2em;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.autoCompleteEntry
+{
+  color:#555555;
+  padding: 10px;
+  border-color: #EFCDFF;
+  border-width: 1px;
+  border-bottom-style: solid;
+}
+.autoCompleteEntry:hover
+{
+  padding: 10px;
+  border-color: #EFCDFF;
+  color: #E89FC0;
+  border-width: 1px;
+  border-bottom-style: solid;
+}
 
 /* tab color */
 .purpleTab>li>a
