@@ -81,7 +81,7 @@ body{background:#EFCDFF;}
   background-color: #E89FC0;
   border:none;
 }
-
+/* tab content */
 .contentpage
 {
   background-color: #fff;
@@ -101,6 +101,33 @@ body{background:#EFCDFF;}
 {
   font-size: 1.75em;
   color: #FF8B6E;
+}
+.panelheader3
+{
+  font-size: 1.5em;
+  color: #FF8B6E;
+}
+
+.saveButton
+{
+  background-color: #9B96E8;
+  color: #ffffff;
+  width: 16.8em;
+  margin-left: 0.2em;
+}
+.saveButton:hover
+{
+  background-color: #E89FC0;
+  color: #ffffff;
+}
+
+.saveList
+{
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  width: 16.8em;
+  margin-left: 0.2em;
 }
 
 .column {

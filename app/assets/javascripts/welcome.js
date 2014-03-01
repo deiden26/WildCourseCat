@@ -24,9 +24,15 @@ function clickHide()
 	$('.autoCompleteBox').hide();
 }
 
-function reveal()
+function revealCourse()
 {
 	$('#greeting').hide();
 	$('.courseSearch').val("Psych 303-0: Psychopathology");
 	$('#firstTab').addClass("active");
+	$('#saveButton').show(400);
+}
+
+function revealList()
+{
+	$('.saveList').show(400);
 }
