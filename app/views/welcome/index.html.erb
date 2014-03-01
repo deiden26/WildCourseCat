@@ -6,14 +6,18 @@
 			<h3>Please enter a course</h3>
 			<form>
 				<input class="courseSearch" placeholder="Course title or number"
-				onkeyup="showHide();"
+				onkeyup="typeShowHide();"
+				onblur="clickHide();"
 				></input>
 			</form>
-			<div class="autoCompleteBox" hidden>
-				<p class="autoCompleteEntry">Psych 303-0</p>
-				<p class="autoCompleteEntry">Psych 312-2</p>
-				<p class="autoCompleteEntry">Psych 314-0</p>
-				<p class="autoCompleteEntry">Psych 335-0</p>
+			<div class="autoCompleteBox" id="results" hidden>
+				<p class="autoCompleteEntry" onclick="reveal();"><strong>Psych 303-0</strong><br><small>Psychopathology</small></p>
+				<p class="autoCompleteEntry"><strong>Psych 312-2</strong><br><small>Physiological Psychology</small></p>
+				<p class="autoCompleteEntry"><strong>Psych 314-0</strong><br><small>Special Topics in Psychology</small></p>
+				<p class="autoCompleteEntry"><strong>Psych 335-0</strong><br><small>Decision Making</small></p>
+			</div>
+			<div class="autoCompleteBox" id="error" hidden>
+				<p class="autoCompleteError"><strong>Sorry, we couldn't find a matching course</strong><br><small>Please check the course number or spelling</small></p>
 			</div>
 		</div>
 		<div class="col-md-8">
@@ -36,6 +40,8 @@
 					</li>
 				</ul>
 				<div class="tab-content">  <!--coloring did not have effect when a class was put here-->
+					<div class = "contentpage" style="position:absolute;" id="greeting">
+					</div>
 					<div class="tab-pane contentpage active" id="panel-1">
 						<p>
 							I'm in Section 1.

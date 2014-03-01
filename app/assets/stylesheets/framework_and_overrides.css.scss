@@ -25,6 +25,7 @@ body{background:#EFCDFF;}
   border-radius: 5px;
   padding-left: 11px;
 }
+/* Search Autocompletion Box */
 .autoCompleteBox
 {
   background-color: #ffffff;
@@ -34,6 +35,14 @@ body{background:#EFCDFF;}
   margin-top: 2px;
 }
 .autoCompleteEntry
+{
+  color:#555555;
+  padding: 10px;
+  border-color: #EFCDFF;
+  border-width: 1px;
+  border-bottom-style: solid;
+}
+.autoCompleteError
 {
   color:#555555;
   padding: 10px;
@@ -77,6 +86,7 @@ body{background:#EFCDFF;}
 {
   background-color: #fff;
   height: 450px;
+  width: 100%;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius:  5px;
   border-top-right-radius:  5px;
