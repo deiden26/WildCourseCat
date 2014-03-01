@@ -6,8 +6,7 @@
 			<h3>Please enter a course</h3>
 			<form>
 				<input class="courseSearch" placeholder="Course title or number"
-				onfocus="$('.autoCompleteBox').show();"
-				onblur="$('.autoCompleteBox').hide();"
+				onkeyup="showHide();"
 				></input>
 			</form>
 			<div class="autoCompleteBox" hidden>
