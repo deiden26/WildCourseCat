@@ -5,7 +5,7 @@
 		<div class="col-md-4">
 			<h3>Please enter a course</h3>
 			<form>
-				<input class="courseSearch" placeholder="Course title or number"
+				<input class="courseSearch" placeholder="Course title or number" autocomplete="off"
 				onkeyup="typeShowHide();"
 				onblur="clickHide();"
 				></input>
@@ -23,7 +23,7 @@
 		<div class="col-md-8">
 			<div class="tabbable" id="tabs-202962">
 				<ul class="nav nav-tabs purpleTab"> <!-- the background behind the tabs -->
-					<li class=" active">
+					<li id="firstTab">
 						<a href="#panel-1" data-toggle="tab">Course Path</a>
 					</li>
 					<li>
@@ -41,6 +41,8 @@
 				</ul>
 				<div class="tab-content">  <!--coloring did not have effect when a class was put here-->
 					<div class = "contentpage" style="position:absolute;" id="greeting">
+						<p class="panelheader2">Welcome to WildCourseCat</p>
+						<p>Please enter a course title or number in the field to the left to look up its information</p>
 					</div>
 					<div class="tab-pane contentpage active" id="panel-1">
 						<p>
@@ -68,7 +70,7 @@
 							</ul>
 							<p class="panelheader2">McCormick Applications</p>
 							<ul>
-								<li>McCormick Themed Elective (Social Science/Humanities)</li>
+								<li>McCormick Themed Elective (Social & Behavioral Sciences)</li>
 							</ul>
 
 					</div>

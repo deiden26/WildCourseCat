@@ -28,4 +28,5 @@ function reveal()
 {
 	$('#greeting').hide();
 	$('.courseSearch').val("Psych 303-0: Psychopathology");
+	$('#firstTab').addClass("active");
 }
