@@ -1,20 +1,36 @@
 function typeShowHide()
 {
-	var box = $('.courseSearch').val();
-	if ("psych 303-0".indexOf(box) != -1 || "Psych 303-0".indexOf(box) != -1 || "PSYCH 303-0".indexOf(box) != -1)
-		if(box != "")
+	var box = $('.courseSearch').val().toLowerCase();
+	if ("psych 303-0".indexOf(box) != -1 || "psych303-0".indexOf(box) != -1)
+		if(box != "" && box.length  > 6)
 		{
-			$('#results').show();
+			$('#results303').show();
 			$('#error').hide();
 		}
 		else
 		{
-			$('#results').hide();
+			$('#results303').hide();
+			$('#resultsPsycho').hide();
 			$('#error').hide();
 		}
+	else if ("psychopathology".indexOf(box) != -1)
+	{
+		if(box != "" && box.length  > 5)
+		{
+			$('#resultsPsycho').show();
+			$('#error').hide();
+		}
+		else
+		{
+			$('#results303').hide();
+			$('#resultsPsycho').hide();
+			$('#error').hide();
+		}
+	}
 	else
 	{
-		$('#results').hide();
+		$('#results303').hide();
+		$('#resultsPsycho').hide();
 		$('#error').show();
 	}
 }
