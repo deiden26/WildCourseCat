@@ -132,6 +132,13 @@ body{background:#EFCDFF;}
   margin-left: 0.2em;
 }
 
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus
+{   
+    border-color: rgba(112, 188, 255, 0.8);
+    box-shadow: 0 1px 1px rgba(112, 188, 255, 0.075) inset, 0 0 8px rgba(112, 188, 255, 0.6);
+    outline: 0 none;
+}
+
 .column {
   @extend .col-md-6;
   @extend .text-center;
