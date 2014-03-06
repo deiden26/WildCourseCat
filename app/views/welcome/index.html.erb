@@ -48,7 +48,7 @@
 						<a href="#panel-3" data-toggle="tab">Major/Minor</a>
 					</li>
 					<li>
-						<a href="#panel-4" data-toggle="tab">Course Ratings</a>
+						<a href="#panel-4" data-toggle="tab" onclick="makeGraph()">Course Ratings</a>
 					</li>
 					<li>
 						<a href="#panel-5" data-toggle="tab">Course Comments</a>
@@ -66,7 +66,7 @@
 					<div class="tab-pane contentpage" id="panel-2">
 						<!--<p class="panelheader1">Info<br></p>-->
 						<p class="panelheader2">Professors</p>
-						<p>Sara Broaders, Renee Engeln, Jutta Joorman</p>
+						<p>Sara Broaders, Renee Engeln, Susan Minka</p>
 						<p class="panelheader2">Course Outline</p>
 						<p>This course provides an introduction to the fascinating field of abnormal psychology. We will discuss definitions of abnormal behavior, the diagnosis and assessment of emotional disorders, and the development and evaluation of treatment approaches. The most commonly occurring disorders will be covered with an emphasis on phenomenology (the experience of the individual experiencing the disorder), etiology (the possible causes of the disorder), and contemporary approaches to treatment. Special attention will be paid to controversial topics and current trends in the study of abnormal psychology, such as the importance of empirical research in developing effective treatments, the use of medication, and the effectiveness of psychotherapy.</p>
 						<p class="panelheader2">Evaluation Method</p>
@@ -90,7 +90,8 @@
 					</div>
 					<div class="tab-pane contentpage" id="panel-4">
 						<p>
-							<img src="http://i9.photobucket.com/albums/a72/superkirby13/EECS330Graph_zps53a5454f.png" alt="Course_Ratings_Graph"></img>
+							<canvas id="myChart" width="730" height="390"></canvas>
+							<div id="myLegend" class="myLegend"></div>
 						</p>
 					</div>
 					<div class="tab-pane contentpage" id="panel-5">
