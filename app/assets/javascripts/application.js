@@ -14,6 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
-//= require Chart
-//= require legend
-//= require welcome
+//= require Chart.js
+//= require_tree .
