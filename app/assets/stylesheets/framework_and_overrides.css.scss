@@ -81,6 +81,33 @@ body{background:#EFCDFF;}
   background-color: #E89FC0;
   border:none;
 }
+/* pill color */
+.purplePill>li>a
+{
+  background-color: #ffffff; 
+  color:#70BCFF;
+  font-size: 1.5em;
+  margin-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+}
+
+/* active pill color */
+.purplePill>li.active>a, .purplePill>li.active>a:hover, .purplePill>li.active>a:focus
+{
+  color: #ffffff;
+  background-color: #9B96E8;
+  border: none;
+}
+
+/* hover pill color */
+.purplePill>li>a:hover
+{
+  background-color: #9B96E8;
+  color: #ffffff;
+  border:none;
+}
 /* tab content */
 .contentpage
 {
