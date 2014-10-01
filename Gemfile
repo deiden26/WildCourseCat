@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
+#for pushing file
+# git commit -am "change test bg to purple bg"
+#git push origin
 
 # Use sqlite3 as the database for Active Record
 
